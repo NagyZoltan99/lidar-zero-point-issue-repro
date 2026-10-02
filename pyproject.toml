@@ -1,0 +1,16 @@
+[project]
+name = "ovrtx-lidar-zero-point-repro"
+version = "0.1.0"
+description = "Minimal reproduction: OmniLidar Generic Core silently returns 0 points for a wide / near-pole elevationDeg fan."
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy",
+    "ovrtx==0.5.0.377615",
+    "ovstage==0.2.0.377349",
+]
+
+[tool.uv]
+# ovrtx / ovstage are published on NVIDIA's index.
+[[tool.uv.index]]
+name = "nvidia"
+url = "https://pypi.nvidia.com"
